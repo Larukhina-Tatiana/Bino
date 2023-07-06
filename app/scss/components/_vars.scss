@@ -1,12 +1,14 @@
 :root {
-    --white: #FFFFF0;
-    --link: rgba(54, 56, 56, 0.9033);
-    --gray: #DFDFDF;
-    --title: #363838;
-    --default: #5A5A5A;
-    --accent: rgba(255, 239, 53, .9);
-    --dove-gray: #707070;
-    --line: #979797;
+    --white: #FFFFFF;
+    --link: #444444;
+    --default: #333;
+    --black: #000;
+    --gray: #666;
+    
+    // --title: #363838;
+    // --accent: rgba(255, 239, 53, .9);
+    // --dove-gray: #707070;
+    // --line: #979797;
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
@@ -18,6 +20,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
@@ -54,3 +57,4 @@
 // }
 
 // @extend %title-font;
+//       box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
