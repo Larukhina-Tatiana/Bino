@@ -4,14 +4,14 @@
     --default: #333;
     --black: #000;
     --gray: #666;
-    
+
     // --title: #363838;
     // --accent: rgba(255, 239, 53, .9);
     // --dove-gray: #707070;
     // --line: #979797;
 }
 
-@mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
+@mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 }
@@ -25,6 +25,7 @@
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
 }
@@ -33,8 +34,8 @@
 // @include transition ($transition-property: color);
 
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
-//                     <use href="./images/projects/icons.svg#icon-search"></use>
-//                   </svg>
+// <use href="./images/projects/icons.svg#icon-search"></use>
+// </svg>
 
 // @media screen and (width < 1034px ) {}
 
@@ -58,3 +59,35 @@
 
 // @extend %title-font;
 //       box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
+// margin-left: calc(20px + (182 - 20) * ((100vw - 300px)/ (1200 - 300)));
+// font-size: calc(10px + (20 - 10) * ((100vw - 300px)/ (1200 - 300)));
+
+$maxWidth: 1440;
+$maxWidthContainer: 1170;
+
+@mixin adaptive-value($property, $startSize, $minSize, $type) {
+    $addSize: $startSize - $minSize;
+ 
+    @if $type==1 {
+        // Только, если меньше контейнера
+        #{$property}: $startSize + px;
+
+        @media screen and (max-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} *((100vw - 320px) / #{$maxWidthContainer - 320}));
+        }
+    }
+
+    @else if $type==2 {
+        // Только, если больше контейнера
+        #{$property}: $startSize + px;
+
+        @media screen and (min-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} *((100vw - 320px) / #{$maxWidthContainer - 320}));
+        }
+    } @else {
+        // Всегда
+        #{$property}: calc(#{$minSize + px} + #{$addSize} *((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+}
+// @include adaptive-value(padding, 50, 20, 0);
+// padding: calc(20px + (50 - 20) * ((100vw - 300px)/ (1200 - 300)));

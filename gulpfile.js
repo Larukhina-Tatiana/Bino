@@ -11,7 +11,7 @@ const autoprefixer = require("gulp-autoprefixer");
 // очистка папок
 const clean = require("gulp-clean");
 //  сжатие и конвертация картинок
-const avif = require("gulp-avif");
+// const avif = require("gulp-avif");
 const webp = require("gulp-webp");
 const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
@@ -53,13 +53,20 @@ function styles() {
     .pipe(concat("style.min.css"))
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(dest("app/css"))
-    .pipe(autoprefixer({ overrideBrowsersList: ["last 10 version"] }));
+    .pipe(autoprefixer({
+      overrideBrowsersList: ["last 10 version"],
+      grid: true
+  }));
 }
 
 function scripts() {
   return src([
+
     // "node_modules/swiper/swiper-bundle.js",
+    "node_modules/jquery/dist/jquery.js",
     "node_modules/slick-carousel/slick/slick.js",
+    // mixitup для выборки по катерогиям (фильтрамб табсам)
+
     "node_modules/mixitup/dist/mixitup.js",
     "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
 
@@ -85,18 +92,27 @@ function images() {
       // .pipe(newer("app/images"))
       // .pipe(avif({ quality: 50 }))
 
-      // .pipe(src("app/images/**/*.*"))
-      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(src("app/images/**/*.*"))
+      .pipe(src("app/images/src/*.*"))
       .pipe(newer("app/images"))
       .pipe(webp())
 
-      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(src("app/images/src/*.*"))
       .pipe(newer("app/images"))
-      .pipe(imagemin())
-
+      .pipe(imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.mozjpeg({quality: 75, progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
+          plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+          ]
+        })
+      ]))
+      )
       .pipe(dest("app/images"))
-  );
-}
+  }
 
 function sprite() {
   return src("app/images/src/icons/*.svg")
@@ -132,8 +148,8 @@ function building() {
       "!app/images/stack",
       "app/images/sprite.svg",
     ],
-    { base: "app" }
-  ).pipe(dest("dist"));
+    { base: "app" })
+    .pipe(dest("dist"));
 }
 
 // слежение за обновлениями файлов
@@ -153,6 +169,6 @@ exports.sprite = sprite;
 exports.building = building;
 exports.watching = watching;
 
-exports.build = series(cleanDist, building);
+exports.build = series(cleanDist, building);   
 
 exports.default = parallel(styles, images, scripts, includeh, watching);

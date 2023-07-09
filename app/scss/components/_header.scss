@@ -1,10 +1,9 @@
 .header {
   &__inner {
     padding-top: 0.625rem;
-    padding-bottom: 1.9375rem;
+    padding-bottom: calc(10px + (31 - 10) * ((100vw - 300px)/ (1200 - 300)));;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid var(--black);
   }
 
@@ -12,21 +11,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 34px;
-    // margin-left: 11.375rem;
+    column-gap: calc(10px + (34 - 10) * ((100vw - 300px)/ (1200 - 300)));
     margin-left: calc(20px + (182 - 20) * ((100vw - 300px)/ (1200 - 300)));
-    margin-right: 1.75rem;
+    margin-right: calc(10px + (28 - 10) * ((100vw - 300px)/ (1200 - 300)));
   }
 
-  
+
   &__menu-link {
     color: var(--link);
     font-family: Syne;
     text-transform: uppercase;
     @include transition ($transition-property: color);
 
-    &--active{
+    &--active {
       position: relative;
+
       &::after {
         position: absolute;
         content: '';
@@ -41,15 +40,40 @@
   }
 
   &__btn {
+    position: relative;
+    margin-left: (calc(5px + (30 - 5) * ((100vw - 300px)/ (1200 - 300))));
+    margin-right: (calc(5px + (30 - 5) * ((100vw - 300px)/ (1200 - 300))));
+    min-width: 130px;
+    min-height: 40px;
     border-radius: 5px;
     background: var(--black);
-    padding: 10px 18px;
+    padding: 5px;
     font-family: Syne;
     font-weight: 600;
     color: var(--white);
     text-transform: uppercase;
     border: 1px solid transparent;
     @include transition ($transition-property: all);
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 25px;
+      height: 1px;
+      top: 50%;
+      bottom: 0;
+      background-color: var(--black);
+      transform: rotate(90deg);
+    }
+
+    &::before {
+      left: -2.6875em;
+    }
+
+    &::after {
+      right: -2.5625em;
+    }
   }
 
   @media (hover: hover) {
@@ -58,7 +82,6 @@
     }
 
     &__btn:hover {
-      // transform: scale(1.02);
       background-color: var(--white);
       color: var(--black);
       border: 1px solid var(--black);
