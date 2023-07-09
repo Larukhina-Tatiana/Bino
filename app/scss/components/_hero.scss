@@ -22,7 +22,7 @@
       position: absolute;
       width: 84px;
       height: 84px;
-      content: url(/app/images/src/icons/decor1.svg);
+      content: url(../images/src/icons/decor1.svg);
       top: -90px;
       right: -65px;
     }
@@ -40,7 +40,7 @@
       width: 80px;
       height: 80px;
       position: absolute;
-      content: url(/app/images/src/icons/decor2.svg);
+      content: url(../images/src/icons/decor2.svg);
       bottom: -19px;
       left: -42px;
     }
@@ -80,16 +80,14 @@
   }
 
   &__container-img {
-    // width: 612px;
-    // height: 408px;
+    max-width: 612px;
+    max-height: 408px;
     margin: 5px;
     border-radius: 12px;
     overflow: hidden;
   }
 
   &__img {
-    max-width: 612px;
-    max-height: 408px;
     width: 100%;
     height: 100%;
     object-fit: cover;
