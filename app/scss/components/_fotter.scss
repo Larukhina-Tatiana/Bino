@@ -20,8 +20,6 @@
       height: 241px;
       background: #000;
       right: 0;
-
-
     }
   }
 
@@ -45,7 +43,7 @@
     width: 100%;
     margin-left: calc(15px + (55 - 15) * ((100vw - 300px)/ 900));
 
-    .subtitle__fourth {
+    .subtitle-5 {
       margin-left: -0.788em;
       margin-bottom: calc(10px + (27 - 10) * ((100vw - 300px)/ 900));
     }
@@ -61,7 +59,7 @@
   &__contacts {
     margin-left: calc(15px + (69 - 15) * ((100vw - 300px)/ 900));
 
-    .subtitle__fourth {
+    .subtitle-5 {
       margin-bottom: calc(10px + (27 - 10) * ((100vw - 300px)/ 900));
     }
 
@@ -80,7 +78,7 @@
 
   &__subscribe {
     margin-left: calc(15px + (35 - 15) * ((100vw - 300px)/ 900));
-    .subtitle__fourth {
+    .subtitle-5 {
       margin-bottom: calc(10px + (27 - 10) * ((100vw - 300px)/ 900));
     }
 
@@ -150,8 +148,5 @@
       font-weight: 400;
       line-height: normal;
     }
-
-
-
   }
 }

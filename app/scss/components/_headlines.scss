@@ -1,0 +1,55 @@
+// h2 14px
+.subtitle {
+  margin-bottom: 8px;
+  color: var(--default);
+  font-family: Plus Jakarta Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+// h3 40px
+.section-title {
+  margin-bottom: 23px;
+  color: var(--black);
+  @extend %syne-600;
+  // font-size: 2.5rem;
+  font-size: (calc(28px + (40 - 28) * ((100vw - 300px)/ 900)));
+  font-style: normal;
+  line-height: normal;
+}
+
+// h4 30px
+.subtitle-4 {
+  margin-bottom: 3px;
+  color: var(--black);
+  @extend %syne-500;
+  // font-size: 1.875rem;
+  font-size: (calc(20px + (30 - 20) * ((100vw - 300px)/ 900)));
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+// h5 25px
+.subtitle-5 {
+  @extend %syne-500;
+  // font-size: 1.5625rem;
+  font-size: (calc(18px + (25 - 18) * ((100vw - 300px)/ 900)));
+  color: var(--black);
+  line-height: 1.2;
+}
+
+// h6 13px
+.subtitle-6 {
+  color: var(--gray);
+  font-family: Plus Jakarta Sans;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.25px;
+}

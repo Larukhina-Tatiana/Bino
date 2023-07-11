@@ -1,0 +1,95 @@
+.feature {
+  margin-top: calc(25px + (68 - 25) * ((100vw - 300px)/ 900));
+  margin-bottom: calc(25px + (76 - 25) * ((100vw - 300px)/ 900));
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: calc(25px + (120 - 25) * ((100vw - 300px)/ 900));
+  }
+
+  &__content {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 39px;
+  }
+
+
+  &__works {
+    max-width: 670px;
+
+    &-list {
+      max-width: 670px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: calc(25px + (130 - 25) * ((100vw - 300px)/ 900));
+      row-gap: calc(15px + (85 - 15) * ((100vw - 300px)/ 900));
+    }
+
+    &-inner-content {
+      max-width: 178px;
+      width: 100%;
+      margin-left: 10px;
+    }
+
+    &-item {
+      display: flex;
+      flex-basis: calc((100% - calc(25px + (130 - 25) * ((100vw - 300px)/ 900))) / 2);
+      position: relative;
+
+      &:nth-child(odd):after {
+        content: '';
+        position: absolute;
+        background-color: var(--black);
+        width: 1px;
+        height: 151px;
+        top: 8px;
+        right: -65px;
+      }
+
+      &:nth-child(-n+2)::before {
+        content: '';
+        position: absolute;
+        background-color: var(--black);
+        width: 250px;
+        height: 1px;
+        bottom: -42.5px;
+      }
+
+      &:nth-child(2)::before {
+        right: 0;
+      }
+
+      & svg {
+        width: 70px;
+        height: 70px;
+      }
+
+
+
+      &-content {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-btn {
+      color: var(--black);
+      @extend %syne-600;
+      font-size: 13px;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      & svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
