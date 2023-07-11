@@ -1,0 +1,39 @@
+.nav {
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: calc(5px + (34 - 5) * ((100vw - 300px)/ (1200 - 300)));
+    margin-left: calc(10px + (182 - 10) * ((100vw - 300px)/ (1200 - 300)));
+    margin-right: calc(10px + (28 - 10) * ((100vw - 300px)/ (1200 - 300)));
+  }
+
+
+  &__menu-link {
+    color: var(--link);
+    font-family: Syne;
+    text-transform: uppercase;
+    @include transition ($transition-property: color);
+
+    &--active {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--black);
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    &__menu-link:hover {
+      color: var(--black);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.clients {
+  padding-top: calc(30px + (80 - 30) * ((100vw - 300px)/ 900));
+  padding-bottom: calc(30px + (80 - 30) * ((100vw - 300px)/ 900));
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: calc(20px + (65 - 20) * ((100vw - 300px)/ 900));
+    gap: 54px;
+  }
+
+  &__content {
+    max-width: 190px;
+    width: 100%;
+  }
+  &__text {
+    width: 100%;
+    position: relative;
+    margin-right: calc(26px + (46 - 26) * ((100vw - 300px)/ 900));
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-color: var(--black);
+    }
+  }
+
+
+}

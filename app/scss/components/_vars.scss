@@ -16,11 +16,10 @@
     transition-timing-function: $transition-timing-function;
 }
 
-%title-font {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
+// %title-font {
+//     font-family: 'Montserrat', sans-serif;
+//     font-weight: 700;
+// }
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});

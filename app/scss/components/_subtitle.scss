@@ -1,0 +1,12 @@
+.subtitle {
+  @extend %syne-500;
+  color: var(--black);
+
+
+  &__fourth {
+    @extend %syne-500;
+    font-size: 25px;
+    color: var(--black);
+    line-height: 1.2;
+  }
+}

@@ -12,6 +12,10 @@
     font-weight: 400;
     font-style: normal;
 }
+%syne-400 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+}
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url(../fonts/PlusJakartaSans-Regular.woff2) format('woff2'), url(../fonts/PlusJakartaSans-Regular.woff) format('woff');
@@ -26,6 +30,10 @@
     src: url(../fonts/Syne-Medium.woff2) format('woff2'), url(../fonts/Syne-Medium.woff) format('woff');
     font-weight: 500;
     font-style: normal;
+}
+%syne-500 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
 }
 @font-face {
     font-family: 'Plus Jakarta Sans';
@@ -54,6 +62,10 @@
     font-weight: 600;
     font-style: normal;
 }
+%syne-600 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+}
 // 700
 @font-face {
     font-family: 'Syne';
@@ -61,4 +73,10 @@
     font-weight: 700;
     font-style: normal;
 }
+%syne-700 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+// @extend %yne-700;
 

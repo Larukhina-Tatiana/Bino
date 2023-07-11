@@ -106,7 +106,7 @@ button,
     max-width: 1320px;
     padding: 30px 50px 50px;
     margin: 0 auto;
-    border: 1px solid #000;
+    outline: 1px solid #000;
 }
 
 // .section__title {
@@ -118,6 +118,11 @@ button,
 //     @media screen and (width < 881px) {
 //         font-size: 34px;
 //     }
+// }
+
+// .line {
+//     background-color: var(--black);
+//     height: 1px;
 // }
 
 .visually-hidden {
