@@ -15,7 +15,7 @@
   }
   
   &--section {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: calc(5px + (14 - 5) * ((100vw - 300px)/ (1200 - 300)));
