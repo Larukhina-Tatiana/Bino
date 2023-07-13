@@ -74,6 +74,10 @@ button {
     border: none;
 }
 
+::marker {
+    margin-top: 10px;
+}
+
 button,
 [type="button"],
 [type="reset"],

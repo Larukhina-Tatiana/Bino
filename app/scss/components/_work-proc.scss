@@ -1,0 +1,120 @@
+.work-proc {
+  padding-top: (calc(40px + (75 - 40) * ((100vw - 300px)/ 900)));
+  padding-bottom: (calc(70px + (85 - 70) * ((100vw - 300px)/ 900)));
+  // &__inner {
+  //   display: flex;
+
+  // }
+
+  &__descr {
+    display: flex;
+    gap: 124px;
+    padding-bottom: 80px;
+
+  }
+
+
+  &__blockquote {
+    max-width: 440px;
+    color: #333;
+    font-family: Plus Jakarta Sans;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 140%;
+    margin-left: 30px;
+  }
+
+  &__title {
+    max-width: 570px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 244px;
+      background-color: var(--black);
+      top: 0;
+      left: -62px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    margin-top: (calc(30px + (69 - 30) * ((100vw - 300px)/ 900)));
+    margin-left: 600px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      max-height: 530px;
+      background-color: var(--black);
+      top: 0;
+      bottom: 0;
+      left: -101px;
+    }
+  }
+
+  &__item {
+    padding-left: 98px;
+    position: relative;
+    box-sizing: content-box;
+    list-style: decimal-leading-zero;
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+    }
+    
+    & span {
+      border: 1px solid #DDDDDD;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: -9px;
+      left: -52px;
+
+    }
+
+    &::marker {
+
+      // counter-increment: ol-numbers;
+      // content: counter("0"(ol-numbers));
+
+      // counter-increment: myCounter;
+      background-color: #FDFBF5;
+      @extend %syne-500;
+      font-size: 1.25em;
+      line-height: 140%;
+      color: #aaa;
+    }
+
+    &:not(:last-child)::before {
+      width: 430px;
+      height: 1px;
+      position: absolute;
+      content: '';
+      background-color: var(--black);
+      bottom: 0;
+      left: 98px;
+    }
+  }
+
+  & .subtitle-4 {
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    max-width: 428px;
+  }
+}
+
+.slider {
+  max-width: 440px;
+  // min-width: 0;
+}

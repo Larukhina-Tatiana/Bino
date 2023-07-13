@@ -15,15 +15,16 @@
 // @import "./components/_rightside-menu";
 
 @import "./components/_nav";
-// @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+// @import "./../../node_modules/swiper/swiper-bundle";
 @import "./components/_clients";
 // @import "./components/_social-media";
 @import "./components/_feature";
 // @import "./components/_collection";
 @import "./components/_headlines";
 @import "./components/_portfolio";
-// @import "./components/_works-path";
-// @import "./components/_gallery";
+@import "./components/_work-proc";
+@import "./components/_slick-dots";
 // @import "./components/_tabs-buttons";
 // @import "./components/_blog-box";
 // @import "./components/_breadcrumbs";

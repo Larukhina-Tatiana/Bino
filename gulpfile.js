@@ -65,6 +65,7 @@ function scripts() {
     // "node_modules/swiper/swiper-bundle.js",
     "node_modules/jquery/dist/jquery.js",
     "node_modules/slick-carousel/slick/slick.js",
+    // "node_modules/swiper/swiper-bundle.js",
     // mixitup для выборки по катерогиям (фильтрамб табсам)
 
     "node_modules/mixitup/dist/mixitup.js",

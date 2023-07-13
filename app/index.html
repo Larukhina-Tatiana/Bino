@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BINO-Digital Agency Website</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="./js/swiper-bundle.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 
@@ -383,7 +388,34 @@
                     <div class="container">
                         <div class="work-proc__inner">
                             <div class="work-proc__descr">
-                                <div class="work-proc__slider"></div>
+                                <div class="slider">
+                                    <div class="slider-slide">
+
+                                        <blockquote class="work-proc__blockquote">
+                                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam nostrud.”
+                                        </blockquote>
+                                    </div>
+                                    <div class="slider-slide">
+
+                                        <blockquote class="work-proc__blockquote">
+                                            “The main areas of digital professions:
+                                            Internet Marketing;
+                                            programming;
+                                            product or project management;
+                                            design;
+                                            data analytics..”
+                                        </blockquote>
+                                    </div>
+                                    <div class="slider-slide">
+                                        <blockquote class="work-proc__blockquote">
+                                            “Digital agencies also conduct analytics, develop promotion strategies and
+                                            create content.”
+                                        </blockquote>
+                                    </div>
+                                </div>
+
                                 <div class="work-proc__title">
                                     <h2 class="subtitle">HOW WE WORK</h2>
                                     <h3 class="section-title">
@@ -396,41 +428,44 @@
                                             <use href="./images/src/icons/icons.svg#icon-arrow-btn"></use>
                                         </svg>
                                     </a>
-
                                 </div>
                             </div>
-
-                            <ol class="work-proc__list">
-                                <li class="work-proc__item">
-                                    <h4 class="subtitle-4">Digital Instrument</h4>
-                                    <p class="work-proc__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
-                                        consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
-                                    </p>
-                                </li>
-                                <li class="work-proc__item">
-                                    <h4 class="subtitle-4">unique solutions</h4>
-                                    <p class="work-proc__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
-                                        consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
-                                    </p>
-                                </li>
-                                <li class="work-proc__item">
-                                    <h4 class="subtitle-4">handover supports</h4>
-                                    <p class="work-proc__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
-                                        consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
-                                    </p>
-                                </li>
-                            </ol>
+                            <hr>
                         </div>
+                        <ol class="work-proc__list">
+                            <li class="work-proc__item">
+                                <span></span>
+                                <h4 class="subtitle-4">Digital Instrument</h4>
+                                <p class="work-proc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
+                                    consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </li>
+                            <li class="work-proc__item">
+                                <span></span>
+                                <h4 class="subtitle-4">unique solutions</h4>
+                                <p class="work-proc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
+                                    consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </li>
+                            <li class="work-proc__item">
+                                <span></span>
+                                <h4 class="subtitle-4">handover supports</h4>
+                                <p class="work-proc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non
+                                    consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </li>
+                        </ol>
                     </div>
                 </section>
+                <hr>
             </main>
-            <footer class="footer">
+            <!-- <footer class="footer">
                 <div class="container">
                     <div class="footer__inner">
                         <div class="footer__content">
@@ -495,7 +530,7 @@
                             <h4 class="subtitle-5">Newsletter</h4>
                             <p class="footer__subscribe-text">Be up to date with new products.</p>
                             <!-- Форма с email -->
-                            <form class="footer__form" name="footer-mail" novalidate>
+            <!-- <form class="footer__form" name="footer-mail" novalidate> 
                                 <label class="footer__form-label" for="user_email"></label>
                                 <input class="footer__form-input" type="email" name="email" id="user_email"
                                     placeholder="Enter email..." required />
@@ -514,9 +549,9 @@
                             </form>
                         </div>
                     </div>
-                    <hr>
+                    <hr>-->
 
-                    <div class="footer__bottom">
+            <!-- <div class="footer__bottom">
                         <ul class="social">
                             <li class="social__item">
                                 <a href="" class="social__link">
@@ -556,13 +591,15 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> -->
         </div>
     </div>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-
-    <script src="../js/main.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>
