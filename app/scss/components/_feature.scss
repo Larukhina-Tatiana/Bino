@@ -70,12 +70,10 @@
 
       &:nth-child(1)::before {
         left: calc(30px + (0 - 30) * ((100vw - 300px)/ 900));
-        padding-bottom: 45px;
       }
 
       &:nth-child(2)::before {
         right: calc(89px + (0 - 89) * ((100vw - 300px)/ 900));
-        padding-bottom: 45px;
       }
 
       &:nth-child(3) {
@@ -92,6 +90,7 @@
 
       &--mr {
         margin-right: auto;
+        padding-bottom: 45px;
 
       }
 
