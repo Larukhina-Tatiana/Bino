@@ -182,7 +182,7 @@
                             </div>
                             <div class="feature__works">
                                 <ul class="feature__works-list">
-                                    <li class="feature__works-item">
+                                    <li class="feature__works-item feature__works-item--mr">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
                                             viewBox="0 0 72 72" fill="none">
                                             <path
@@ -264,7 +264,7 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="feature__works-item">
+                                    <li class="feature__works-item feature__works-item--mr">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
                                             viewBox="0 0 72 72" fill="none">
                                             <path
@@ -364,13 +364,16 @@
                             <div class="portfolio__inner-img">
                                 <div class="portfolio__container">
                                     <img class="portfolio__img" src="./images/portfolio-1.jpg" alt="Digital Agency">
-                                    <p class="portfolio__img-text">Digital Agency</p>
+                                    <div class="portfolio__container-link">
+                                        <p class="portfolio__img-text">Digital Agency</p>
                                     <a class="portfolio__img-link" href="">
                                         VIEW
                                         <svg class="portfolio__img-link-svg" aria-label="icon arrow">
                                             <use href="./images/src/icons/icons.svg#icon-arrow-btn"></use>
                                         </svg>
                                     </a>
+                                    </div>
+                                    
                                 </div>
 
                                 <a class="portfolio__temp" href="#">
@@ -381,6 +384,7 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
                 </section>
                 <hr>
 
@@ -531,6 +535,72 @@
                     </div>
                 </section>
                 <hr>
+                <section class="blog">
+                    <div class="container">
+                        <div class="blog__title">
+                            <div class="blog__inner-title">
+                                <h2 class="subtitle">LATEST NEWS</h2>
+                                <h3 class="section-title">Check some of latest
+                                    news & Articles</h3>
+                            </div>
+                            <div class="blog__inner-content">
+                                <p class="blog__inner-content-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna.
+                                </p>
+                                <a class="button button--section">SEE ALL NEWS
+                                    <svg class="button__svg" aria-label="icon twitter">
+                                        <use href="./images/src/icons/icons.svg#icon-arrow-btn"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <ul class="blog__posts">
+                            <li class="blog__posts-item blog__posts-item--mr">
+                                <a class="blog__posts-link" href="">
+                                    <div class="blog__posts-wrapp-img">
+                                        <img class="blog__posts-img" src="./images/blog-img1.jpg"
+                                            alt="powerful-business-women-in-meeting 1">
+                                    </div>
+                                    <h6 class="subtitle-6">BRANDING</h6>
+                                    <h4 class="subtitle-4">
+                                        Things to look for when
+                                        comparing branding
+                                        alternatives
+                                    </h4>
+                                </a>
+                            </li>
+                            <li class="blog__posts-item">
+                                <a class="blog__posts-link" href="">
+                                    <div class="blog__posts-wrapp-img">
+                                        <img class="blog__posts-img" src="./images/blog-img2.jpg"
+                                            alt="powerful-business-women-in-meeting 1">
+                                    </div>
+                                    <h6 class="subtitle-6">DESIGN</h6>
+                                    <h4 class="subtitle-4">
+                                        Drawing identity elements on
+                                        branded media
+                                    </h4>
+                                </a>
+                            </li>
+                            <li class="blog__posts-item blog__posts-item--mt">
+                                <a class="blog__posts-link" href="">
+                                    <div class="blog__posts-wrapp-img">
+                                        <img class="blog__posts-img" src="./images/blog-img3.jpg" width="470"
+                                            alt="powerful-business-women-in-meeting 1">
+                                    </div>
+                                    <h6 class="subtitle-6">DEVELOPMENT</h6>
+                                    <h4 class="subtitle-4">
+                                        How to add a count animation
+                                        the webflow site
+                                    </h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <hr>
 
 
             </main>
@@ -574,7 +644,7 @@
                                     <li class="footer__contacts-item">
                                         <a class="footer__contacts-link" href="https://goo.gl/maps/7WhiUVNireNUAh979"
                                             target="_blank" rel="noopener noreferrer nofollow">
-                                            20 Cooper Square,</br>
+                                            20 Cooper Square,<br>
                                             New York, NY 1003, USA
                                         </a>
                                     </li>
@@ -602,7 +672,7 @@
                             <form class="footer__form" name="footer-mail" novalidate>
                                 <label class="footer__form-label" for="user_email"></label>
                                 <input class="footer__form-input" type="email" name="email" id="user_email"
-                                    placeholder="Enter email..." required />
+                                    placeholder="Enter email..." required>
                                 <button class="footer__form-button" type="submit">
                                     SUBSCRIBE
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15"

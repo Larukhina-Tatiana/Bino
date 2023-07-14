@@ -20,15 +20,17 @@
 
 
   &__works {
-    max-width: 670px;
+    min-width: 670px;
+    width: 100%;
+
 
     &-list {
       max-width: 670px;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      column-gap: calc(25px + (130 - 25) * ((100vw - 300px)/ 900));
-      row-gap: calc(15px + (85 - 15) * ((100vw - 300px)/ 900));
+      // column-gap: calc(25px + (130 - 25) * ((100vw - 300px)/ 900));
+      // row-gap: calc(15px + (85 - 15) * ((100vw - 300px)/ 900));
     }
 
     &-inner-content {
@@ -41,6 +43,7 @@
       display: flex;
       flex-basis: calc((100% - calc(25px + (130 - 25) * ((100vw - 300px)/ 900))) / 2);
       position: relative;
+      // margin-right: auto;
 
       &:nth-child(odd):after {
         content: '';
@@ -60,20 +63,36 @@
         max-width: calc(200px + (250 - 200) * ((100vw - 300px)/ 900));
         width: 100%;
         height: 1px;
-        bottom: calc(-6.5px + (-42.5 - 6.5) * ((100vw - 300px)/ 900));
+        // bottom: calc(-6.5px + (-42.5 - 6.5) * ((100vw - 300px)/ 900));
+        bottom: 0;
+
       }
 
       &:nth-child(1)::before {
         left: calc(30px + (0 - 30) * ((100vw - 300px)/ 900));
+        padding-bottom: 45px;
       }
 
       &:nth-child(2)::before {
         right: calc(89px + (0 - 89) * ((100vw - 300px)/ 900));
+        padding-bottom: 45px;
+      }
+
+      &:nth-child(3) {
+        padding-top: 45px;
+      }
+      &:nth-child(4) {
+        padding-top: 45px;
       }
 
       & svg {
         width: 70px;
         height: 70px;
+      }
+
+      &--mr {
+        margin-right: auto;
+
       }
 
 
