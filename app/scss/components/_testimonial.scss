@@ -1,0 +1,79 @@
+.testimonial {
+  padding-top: 76px;
+  padding-bottom: 79px;
+  position: relative;
+
+  & .subtitle {
+    text-align: center;
+    &::after {
+      position: absolute;
+      content: url(/app/images/src/icons/quote.svg);
+      top: 123px;
+      left: 50%;
+      transform: translatex(-50%);
+      width: 70px;
+      height: 60px;
+      z-index: 1;
+    }
+  }
+
+  &__slider {
+    width: 830px;
+  }
+
+
+
+  &__blockquote {
+    margin-top: 50px;
+  }
+
+  &__blockquote-text {
+    margin-bottom: 46px;
+    color: var(--black);
+    text-align: center;
+    @extend %syne-500;
+    font-size: 25px;
+    line-height: 140%;
+  }
+
+  &__blockquote-name {
+    display: block;
+    color: var(--black);
+    text-align: center;
+    @extend %syne-600;
+    font-size: 24px;
+    line-height: normal;
+    font-style: normal;
+
+    & span {
+      display: block;
+      color: #666;
+      font-family: Plus Jakarta Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__blockquote-arrow {
+    position: absolute;
+    top: 32%;
+
+    & svg {
+    cursor: pointer;
+      @include transition ($transition-property: (color, fill));
+    }
+
+    &:hover svg {
+      fill: rgba(#000000, .05);
+
+    }
+  }
+}
+
+.swiper-button-right {
+  transform: translateX(1070px);
+}
