@@ -36,8 +36,8 @@
       position: absolute;
       background-color: var(--black);
       width: 1px;
-      height: 685px;
-      // max-height: 151px;
+      max-height: 721px;
+      height: 100%;
       top: 8px;
       left: 50%;
     }
@@ -46,15 +46,29 @@
       &--mr {
         margin-right: 310px;
       }
+
       &--mt {
-        margin-top: -175px;
+        margin-top: -185px;
+        position: relative;
+        padding-top: 20px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: var(--black);
+          width: 430px;
+          height: 1px;
+          top: 0;
+        }
       }
     }
 
     &-link .subtitle-4 {
+      margin-bottom: 0;
       max-width: 330px;
       line-height: 1.19;
       text-transform: none;
+
     }
 
     &-link .subtitle-6 {
