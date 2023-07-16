@@ -37,7 +37,6 @@
 
   &__inner {
     display: flex;
-    // gap: calc(22px + (56 - 22) * ((100vw - 300px)/ (1200 - 300)));
     margin-top: 34px;
   }
 
@@ -67,15 +66,18 @@
   }
 
   &__link {
-    align-self: flex-end;
     margin-bottom: 33px;
-    transform: rotate(-90deg);
     display: inline-flex;
+    align-self: flex-end;
     align-items: center;
-    gap: 7px;
-    font-family: Syne;
+
+    @media screen and (width > 481px) {
+      gap: 7px;
+    }
+
+    transform: rotate(-90deg);
+    @extend %syne-600;
     font-size: calc(8px + (13 - 8) * ((100vw - 300px)/ (1200 - 300)));
-    font-weight: 600;
     line-height: 140%;
     letter-spacing: 1.3px;
     color: var(--black);
@@ -133,6 +135,20 @@
 
     &__text {
       max-width: 100%;
+    }
+
+    &__container-img {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (width < 481px) {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__link {
+      gap: 0;
     }
   }
 }
