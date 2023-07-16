@@ -55,7 +55,7 @@ dd {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
-    font-size: (calc(12px + (16 - 12) * ((100vw - 300px)/ 900)));
+    font-size: 1rem;
     line-height: calc(19/16);
     color: var(--default);
     background: #FDFBF5;
@@ -100,7 +100,7 @@ button,
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     // outline: 1px solid red;

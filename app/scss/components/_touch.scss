@@ -5,19 +5,15 @@
   &__btn {
     display: block;
     margin: 0 auto;
+    @extend %syne-500;
     color: #000;
-    font-family: Syne;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    font-size: 6.25rem; // 100px;
 
     & span {
-      font-family: Syne;
-      font-size: 100px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @extend %syne-700;
+      font-size: 6.25rem; // 100px;
+      -webkit-text-stroke: 1px var(--black);
+      color: transparent;
     }
   }
 }

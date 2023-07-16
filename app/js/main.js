@@ -64,13 +64,20 @@ $(function () {
 // $(".header__btn-menu").on("click", function () {
 //     $(".menu").toggleClass("menu--open");
 // });
-// $(".header__btn-menu").on("click", function () {
-//     $(".header__inner").toggleClass("header__inner-btn--open");
-// });
+$(".header__btn-menu").on("click", function () {
+    $(".nav").toggleClass("menu-open");
+});
 
 // if ($(window).width() < 641) {
 //     $(".works-path__item--measurements").appendTo($(".works-path__items-box"));
 // }
+
+if ($(window).width() < 641) {
+    $(".header__btn").appendTo($(".nav"));
+}
+if ($(window).width() < 641) {
+    $(".social").appendTo($(".nav"));
+}
 
 // $(function () {
 //     $(".top__slider").slick({

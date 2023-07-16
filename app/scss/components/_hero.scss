@@ -1,12 +1,17 @@
 .hero {
   padding-top: calc(30px + (70 - 30) * ((100vw - 300px)/ (1200 - 300)));
   padding-bottom: calc(22px + (52 - 22) * ((100vw - 300px)/ (1200 - 300)));
+  background-image: url(../images/hero1-@1x.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  // background-size: contain;
 
   &__img-bg {
     max-width: 30%;
   }
 
   &__title {
+    padding-top: 228px;
     max-width: 751px;
     margin: 0 auto;
     margin-top: -85px;

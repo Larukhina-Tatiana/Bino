@@ -1,25 +1,27 @@
 .social {
   display: flex;
   align-items: center;
-  column-gap: calc(5px + (15 - 5) * ((100vw - 300px)/ (1200 - 300)));
+  column-gap: 15px;
 
   &__link-svg {
-    width: calc(10px + (40 - 10) * ((100vw - 300px)/ (1200 - 300)));
-    height: calc(10px + (40 - 10) * ((100vw - 300px)/ (1200 - 300)));
+    width: calc(20px + (40 - 20) * ((100vw - 300px)/ 900));
+    // height: calc(30px + (40 - 30) * ((100vw - 300px)/ 900));
     border-radius: 50%;
     @include transition ($transition-property: fill);
   }
 
-  &__item--margin-left {
-    position: relative;
-    padding-left: (calc(5px + (15 - 5) * ((100vw - 300px)/ (1200 - 300))));
-    margin-left: (calc(5px + (15 - 5) * ((100vw - 300px)/ (1200 - 300))));
-  }
 
-  @media (hover: hover) {
-    &__item:hover &__link-svg {
-      fill: var(--white);
-      background-color: var(--black);
+    @media (hover: hover) {
+      &__item:hover &__link-svg {
+        fill: var(--white);
+        background-color: var(--black);
+      }
+    }
+
+    @media screen and (width < 971px) {
+      // &__link-svg {
+      //   width: 30px;
+      //   height: 30px;
+      // }
     }
   }
-}
