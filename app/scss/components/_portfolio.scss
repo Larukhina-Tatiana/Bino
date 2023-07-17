@@ -64,7 +64,7 @@
       color: var(--white);
       @extend %syne-600;
       // font-size: 1.5em;
-      font-size: calc(14px + (24 - 14) * ((100vw - 300px)/ 900));
+      font-size: calc(17px + (24 - 17) * ((100vw - 300px)/ 900));
       line-height: 140%;
     }
 
