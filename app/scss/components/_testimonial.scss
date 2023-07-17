@@ -8,7 +8,7 @@
 
     &::after {
       position: absolute;
-      content: url(../images/src/icons/quote.svg);
+      content: url(/app/images/src/icons/quote.svg);
       top: 123px;
       left: 50%;
       transform: translatex(-50%);
@@ -18,27 +18,19 @@
     }
   }
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__slider {
-    max-width: 100%;
+    max-width: 830px;
   }
 
 
 
   &__blockquote {
-    max-width: 830px;
     margin-top: 50px;
-    // margin-left: auto;
-    // margin-right: auto;
+    padding: 0 15px;
   }
 
   &__blockquote-text {
     margin-bottom: 46px;
-    // padding: 0 70px;
     color: var(--black);
     text-align: center;
     @extend %syne-500;
@@ -69,29 +61,35 @@
   }
 
   &__blockquote-arrow {
-    display: flex;
-    max-width: 100px;
-    width: (calc(30px + (100 - 30) * ((100vw - 300px)/ 900)));;
     position: absolute;
-    top: 32%;
+    z-index: 5;
+
+    @media screen and (width > 971px) {
+      top: 32%;
+    }
 
     & svg {
       cursor: pointer;
       @include transition ($transition-property: (color, fill));
     }
+  }
 
-    @media (hover: hover) {
-      &:hover svg {
-        fill: rgba(#000000, .05);
-      }
+
+  @media (hover: hover) {
+    &:hover svg {
+      fill: rgba(#000000, .05);
     }
   }
 }
 
-// .swiper-button-right {
-//   right: 60px;
-// }
+.swiper {
+  position: static;
+}
 
-.swiper-slide {
+.swiper-button-left {
+  left: 0;
+}
 
+.swiper-button-right {
+  right: 0;
 }
