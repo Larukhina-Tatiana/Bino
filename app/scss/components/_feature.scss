@@ -1,6 +1,6 @@
 .feature {
-  margin-top: calc(25px + (68 - 25) * ((100vw - 300px)/ 900));
-  margin-bottom: calc(25px + (76 - 25) * ((100vw - 300px)/ 900));
+  padding-top: calc(25px + (68 - 25) * ((100vw - 300px)/ 900));
+  padding-bottom: calc(25px + (76 - 25) * ((100vw - 300px)/ 900));
 
 
   &__inner {
