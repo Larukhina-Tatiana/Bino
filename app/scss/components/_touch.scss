@@ -8,12 +8,18 @@
     @extend %syne-500;
     color: #000;
     font-size: 6.25rem; // 100px;
-
+    font-size:  calc(40px + (100 - 40) * ((100vw - 300px)/ 900));
+    
     & span {
       @extend %syne-700;
-      font-size: 6.25rem; // 100px;
+      font-size:  calc(40px + (100 - 40) * ((100vw - 300px)/ 900));
       -webkit-text-stroke: 1px var(--black);
       color: transparent;
+    }
+
+    & svg {
+      width: calc(40px + (80 - 40) * ((100vw - 300px)/ 900));
+      height: calc(40px + (80 - 40) * ((100vw - 300px)/ 900));
     }
   }
 }
