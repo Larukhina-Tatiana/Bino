@@ -1,21 +1,29 @@
 .hero {
   padding-top: calc(30px + (70 - 30) * ((100vw - 300px)/ (1200 - 300)));
   padding-bottom: calc(22px + (52 - 22) * ((100vw - 300px)/ (1200 - 300)));
-  background-image: url(../images/hero1-@1x.jpg);
-  background-position: 15px 70px;
-  background-repeat: no-repeat;
 
-  &__img-bg {
-    max-width: 30%;
+  &__bg {
+    @media screen and (width > 1145px) {
+      max-width: 370px;
+      height: 200px;
+      background-image: url(../images/hero1-@1x.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      outline: 1px solid coral;
+    }
   }
 
   &__title {
     position: relative;
     max-width: 751px;
 
+    @media screen and (width < 1145px) {
+      margin: 35px auto;
+    }
+
     @media screen and (width > 731px) {
-      padding-top: 300px;
-      margin: -85px auto 0;
+      // padding-top: 300px;
+      // margin: -85px auto 0;
       padding-left: calc(22px + (62 - 22) * ((100vw - 300px)/ (1200 - 300)));
     }
 
@@ -30,7 +38,7 @@
       width: 84px;
       height: 84px;
       content: url(../images/src/icons/decor1.svg);
-      top: 90px;
+      top: -100px;
       right: -65px;
     }
   }
@@ -102,7 +110,6 @@
     height: 100%;
     object-fit: cover;
   }
-
 
   @media screen and (width < 971px) {
     &__title {

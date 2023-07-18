@@ -153,6 +153,12 @@
     padding-top: calc(25px + (50 - 25) * ((100vw - 300px)/ 900));
   }
 
+  &__social {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
   &__policy {
 
     &-list {
