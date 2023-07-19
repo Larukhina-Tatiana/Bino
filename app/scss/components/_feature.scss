@@ -135,10 +135,10 @@
       flex-direction: column;
     }
 
-    &__works-item {
+    &__works-item:not(:last-child) {
       padding-bottom: 20px;
       margin-bottom: 20px;
-      position: relative;
+      
 
       &::after {
         content: '';
