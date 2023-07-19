@@ -4,7 +4,7 @@
   column-gap: 15px;
 
   &__link-svg {
-    width: calc(20px + (40 - 20) * ((100vw - 300px)/ 900));
+    width: 40px;
     // height: calc(30px + (40 - 30) * ((100vw - 300px)/ 900));
     border-radius: 50%;
     @include transition ($transition-property: fill);
@@ -13,8 +13,9 @@
 
     @media (hover: hover) {
       &__item:hover &__link-svg {
-        fill: var(--white);
+                fill: var(--white);
         background-color: var(--black);
+        border-radius: 50%;
       }
     }
 

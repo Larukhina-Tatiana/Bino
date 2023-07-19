@@ -77,8 +77,14 @@
 
 
   @media (hover: hover) {
-    &:hover svg {
+    &__blockquote-arrow:hover svg {
       fill: rgba(#000000, .05);
+    }
+  }
+
+  @media screen and (width < 481px) {
+    &__blockquote-arrow svg {
+      width: 61px;
     }
   }
 }
@@ -89,8 +95,10 @@
 
 .swiper-button-left {
   left: 0;
+  bottom: 16px;
 }
 
 .swiper-button-right {
   right: 0;
+  bottom: 16px;
 }
