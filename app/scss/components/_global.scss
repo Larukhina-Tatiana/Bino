@@ -107,6 +107,11 @@ button,
     // background-color: coral;
 }
 
+.hr-line {
+    border-bottom: 1px solid var(--black);
+}
+
+
 .container-fluid {
     max-width: 1320px;
     padding: 30px 50px 50px;

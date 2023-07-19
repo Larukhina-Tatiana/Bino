@@ -1,10 +1,11 @@
 .portfolio {
-  margin-top: calc(25px + (76 - 25) * ((100vw - 300px)/ 900));
-  margin-bottom: calc(25px + (81 - 25) * ((100vw - 300px)/ 900));
+    & .hr-line {
+    padding-top: calc(30px + (78 - 30) * ((100vw - 300px)/ (1200 - 300)));
+    padding-bottom: calc(30px + (80 - 22) * ((100vw - 300px)/ (1200 - 300)));
+  }
 
   &__inner {
     display: flex;
-    // align-items: center;
     column-gap: calc(25px + (120 - 25) * ((100vw - 300px)/ 900));
   }
 
@@ -101,7 +102,7 @@
     padding-bottom: 21px;
     position: relative;
 
-    &::before {
+    &:not(:last-child)::before {
       position: absolute;
       content: '';
       width: 100%;

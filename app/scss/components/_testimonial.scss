@@ -1,6 +1,9 @@
 .testimonial {
-  padding-top: 76px;
-  padding-bottom: 79px;
+  & .hr-line {
+    padding-top: calc(30px + (76 - 30) * ((100vw - 300px)/ (1200 - 300)));
+    padding-bottom: calc(30px + (79 - 30) * ((100vw - 300px)/ (1200 - 300)));
+  }
+
   position: relative;
 
   & .subtitle {
@@ -8,7 +11,7 @@
 
     &::after {
       position: absolute;
-      content: url(/app/images/src/icons/quote.svg);
+      content: url(../images/src/icons/quote.svg);
       top: 123px;
       left: 50%;
       transform: translatex(-50%);
@@ -21,8 +24,6 @@
   &__slider {
     max-width: 830px;
   }
-
-
 
   &__blockquote {
     margin-top: 50px;

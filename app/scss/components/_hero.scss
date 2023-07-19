@@ -1,6 +1,9 @@
 .hero {
-  padding-top: calc(30px + (70 - 30) * ((100vw - 300px)/ (1200 - 300)));
-  padding-bottom: calc(22px + (52 - 22) * ((100vw - 300px)/ (1200 - 300)));
+
+  & .hr-line {
+    padding-top: calc(30px + (70 - 30) * ((100vw - 300px)/ (1200 - 300)));
+    padding-bottom: calc(30px + (52 - 30) * ((100vw - 300px)/ (1200 - 300)));
+  }
 
   &__bg {
     @media screen and (width > 1145px) {
@@ -9,21 +12,24 @@
       background-image: url(../images/hero1-@1x.jpg);
       background-position: center;
       background-repeat: no-repeat;
-      outline: 1px solid coral;
     }
   }
 
   &__title {
     position: relative;
     max-width: 751px;
+    margin: -85px auto 0;
 
     @media screen and (width < 1145px) {
       margin: 35px auto;
     }
 
+    @media screen and (width < 971px) {
+      margin: 0 auto;
+    }
+
     @media screen and (width > 731px) {
       // padding-top: 300px;
-      // margin: -85px auto 0;
       padding-left: calc(22px + (62 - 22) * ((100vw - 300px)/ (1200 - 300)));
     }
 
@@ -46,6 +52,7 @@
   &__inner {
     display: flex;
     margin-top: 34px;
+
   }
 
   &__content {
@@ -56,15 +63,15 @@
       height: 80px;
       position: absolute;
       content: url(../images/src/icons/decor2.svg);
-      bottom: -19px;
-      left: -10px;
+      bottom: 0;
+      left: 1;
     }
   }
 
   &__text {
     margin-top: calc(22px + (46 - 22) * ((100vw - 300px)/ (1200 - 300)));
     max-width: 470px;
-    margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px)/ (1200 - 300)));
+    margin-bottom: calc(20px + (39 - 20) * ((100vw - 300px)/ (1200 - 300)));
   }
 
 

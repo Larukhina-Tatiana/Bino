@@ -1,7 +1,9 @@
 .feature {
-  padding-top: calc(25px + (68 - 25) * ((100vw - 300px)/ 900));
-  padding-bottom: calc(25px + (76 - 25) * ((100vw - 300px)/ 900));
 
+  & .hr-line {
+    padding-top: calc(30px + (68 - 30) * ((100vw - 300px)/ (1200 - 300)));
+    padding-bottom: calc(30px + (76 - 30) * ((100vw - 300px)/ (1200 - 300)));
+  }
 
   &__inner {
     display: flex;
@@ -87,7 +89,10 @@
 
         &--mr {
           margin-right: auto;
-          padding-bottom: 45px;
+
+          &:first-child {
+            padding-bottom: 45px;
+          }
         }
 
         &-content {

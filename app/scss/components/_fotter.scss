@@ -1,11 +1,12 @@
 .footer {
-  padding-top: calc(30px + (50 - 30) * ((100vw - 300px)/ (1200 - 300)));
+  padding-top: calc(30px + (80 - 30) * ((100vw - 300px)/ (1200 - 300)));
   padding-bottom: calc(30px + (50 - 30) * ((100vw - 300px)/ (1200 - 300)));
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: calc(25px + (66 - 25) * ((100vw - 300px)/ 900));
+    padding-bottom: calc(25px + (66 - 25) * ((100vw - 300px)/ 900));
+    border-bottom: 1px solid var(--black);
   }
 
   &__content {
