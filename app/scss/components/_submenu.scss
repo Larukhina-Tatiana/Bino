@@ -9,10 +9,8 @@
   visibility: hidden;
   opacity: 0;
   @include transition ($transition-property: transform);
-  // outline: 1px solid green;
 
   & .nav__menu-link {
-    // border-bottom: 1px solid var(--black);
     padding: 10px 0 10px;
     font-size: 0.875rem;
   }

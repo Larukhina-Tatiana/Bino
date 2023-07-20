@@ -74,6 +74,7 @@
       font-size: inherit;
       color: inherit;
       font-family: Syne;
+      text-transform: uppercase;
     }
   }
 
@@ -226,12 +227,16 @@
     &__policy {
       margin-top: 30px;
     }
-  }
-
-  @media screen and (width < 641px) {
     &__bottom {
       flex-direction: column;
       padding-top: 15px;
     }
   }
+  @media screen and (width < 386px) {
+    &__container {
+      justify-content: start;
+    }
+  }
+
 }
+
