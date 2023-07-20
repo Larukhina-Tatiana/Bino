@@ -20,9 +20,10 @@
       background-color: var(--gray);
     }
   }
-
+  @media (hover: hover) {
   .nav__menu-list li:hover > .submenu {
     transform: rotateX(0deg);
     visibility: visible;
     opacity: 1;
   }
+}
