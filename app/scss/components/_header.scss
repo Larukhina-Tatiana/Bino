@@ -73,7 +73,23 @@
     }
 
     &__wrapp {
-      margin-left: auto;
+      width: 100%;
+    }
+
+    &__btn {
+      margin-top: 15px;
+      font-size: 14px;
+      margin-left: 0;
+      margin-right: 0;
+
+      &::before, 
+      &::after {
+        display: none;
+      }
+    }
+
+    & .social {
+      gap: 0 2px;
     }
   }
 
@@ -90,16 +106,17 @@
 
   @media screen and (width < 641px) {
 
+    &__inner {
+      flex-wrap: nowrap;
+    }
+
     &__btn-menu {
       display: block;
     }
 
-    & hr {
-      display: none;
-    }
 
     &__btn {
-      width: 40%;
+      width: 22%;
       margin-bottom: 35px;
 
       &::before,

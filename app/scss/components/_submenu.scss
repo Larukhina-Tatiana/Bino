@@ -16,10 +16,15 @@
     padding: 10px 0 10px;
     font-size: 0.875rem;
   }
-}
 
-.nav__menu-list li:hover > .submenu {
-  transform: rotateX(0deg);
-  visibility: visible;
-  opacity: 1;
-}
+
+    @media screen and (width < 641px) {
+      background-color: var(--gray);
+    }
+  }
+
+  .nav__menu-list li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
