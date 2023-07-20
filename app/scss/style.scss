@@ -5,6 +5,8 @@
 @import "./components/_vars";
 
 @import "./components/_header";
+@import "./components/_nav";
+@import "./components/_submenu";
 @import "./components/_social";
 @import "./components/_logo";
 @import "./components/_button";
@@ -14,7 +16,6 @@
 
 // @import "./components/_rightside-menu";
 
-@import "./components/_nav";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 // @import "./../../node_modules/swiper/swiper-bundle";
 @import "./components/_clients";

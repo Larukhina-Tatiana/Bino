@@ -4,6 +4,7 @@
     --default: #333;
     --black: #000;
     --gray: #666;
+    --background: #FDFBF5;
 
     // --title: #363838;
     // --accent: rgba(255, 239, 53, .9);
@@ -15,6 +16,7 @@
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 }
+// @include transition ($transition-property: color);
 
 // %title-font {
 //     font-family: 'Montserrat', sans-serif;
@@ -30,7 +32,6 @@
 }
 
 
-// @include transition ($transition-property: color);
 
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
 // <use href="./images/projects/icons.svg#icon-search"></use>
