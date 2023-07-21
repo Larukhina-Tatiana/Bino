@@ -31,7 +31,15 @@
     @return m#{i}n(#{$numbers});
 }
 
-
+// @media (hover: hover) {
+//     &__menu-link:hover {
+//       color: var(--black);
+//       & svg {
+//         fill: var(--black);
+//         @include transition ($transition-property: fill);
+//       }
+//     }
+// }
 
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
 // <use href="./images/projects/icons.svg#icon-search"></use>
