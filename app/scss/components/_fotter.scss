@@ -236,6 +236,11 @@
     &__container {
       justify-content: start;
     }
+
+    &__menu-link,
+    &__contacts-link {
+      font-size: .875rem;
+    }
   }
 
 }
