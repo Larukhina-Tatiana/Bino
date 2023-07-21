@@ -15,15 +15,14 @@
     font-size: 0.875rem;
   }
 
-
     @media screen and (width < 641px) {
       background-color: var(--gray);
     }
   }
-  @media (hover: hover) {
-  .nav__menu-list li:hover > .submenu {
+
+  .nav__menu-list li:hover > .submenu,
+  .nav__menu-list li:focus > .submenu {
     transform: rotateX(0deg);
     visibility: visible;
     opacity: 1;
   }
-}

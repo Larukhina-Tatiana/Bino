@@ -29,9 +29,16 @@
         right: 0;
       }
     }
+
+    &--arrow {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 
-  &__menu-link:hover {
+  &__menu-link:hover,
+  &__menu-link:focus       {
     color: var(--black);
 
     & svg {

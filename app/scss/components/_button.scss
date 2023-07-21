@@ -10,7 +10,7 @@
   
   &__svg {
     width: 13px;
-    height: 16px;
+    height: 16px; 
     fill: var(--white);
   }
   
@@ -22,20 +22,21 @@
     min-width: 12.5em;
     min-height: 3.125em;
     padding: calc(5px + (14 - 5) * ((100vw - 300px)/ (1200 - 300)));
-    
   }
 
-  @media (hover: hover) {
-    &:hover {
+  // @media (hover: hover) {
+    &:hover,
+    &:focus {
       color: var(--black);
       background-color: var(--white);
       border: 1px solid var(--black);
 
-      &:hover {
+      &:hover,
+      &:focus {
         .button__svg {
           fill: var(--black);
         }
       }
     }
   }
-}
+// }

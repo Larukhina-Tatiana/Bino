@@ -64,6 +64,7 @@
   &__blockquote-arrow {
     position: absolute;
     z-index: 5;
+    height: 60px;
 
     @media screen and (width > 971px) {
       top: 32%;

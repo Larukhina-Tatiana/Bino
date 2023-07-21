@@ -10,7 +10,8 @@
     @include transition ($transition-property: fill);
   }
 
-  &__item:hover &__link-svg {
+  &__link:hover &__link-svg,
+  &__link:focus &__link-svg {
     fill: var(--white);
     background-color: var(--black);
   }
