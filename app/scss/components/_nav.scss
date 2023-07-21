@@ -31,13 +31,12 @@
     }
   }
 
-  @media (hover: hover) {
-    &__menu-link:hover {
-      color: var(--black);
-      & svg {
-        fill: var(--black);
-        @include transition ($transition-property: fill);
-      }
+  &__menu-link:hover {
+    color: var(--black);
+
+    & svg {
+      fill: var(--black);
+      @include transition ($transition-property: fill);
     }
   }
 

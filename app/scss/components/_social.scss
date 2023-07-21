@@ -10,19 +10,9 @@
     @include transition ($transition-property: fill);
   }
 
-
-    @media (hover: hover) {
-      &__item:hover &__link-svg {
-                fill: var(--white);
-        background-color: var(--black);
-        border-radius: 50%;
-      }
-    }
-
-    @media screen and (width < 971px) {
-      // &__link-svg {
-      //   width: 30px;
-      //   height: 30px;
-      // }
-    }
+  &__item:hover &__link-svg {
+    fill: var(--white);
+    background-color: var(--black);
   }
+
+}
